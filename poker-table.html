@@ -1,0 +1,652 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+
+<html>
+<head>
+<title>PokerWeb</title>
+<style type="text/css">
+<!--
+A { color: red; text-decoration: none; }
+A:hover { color: darkred; text-decoration: none; }
+BODY { color: white; background: black; font-family: Verdana, Arial; }
+TH { color: black; background: white; }
+HR { color: darkred; height: 2; }
+IMG { border: 0 }
+-->
+</style>
+<script language="JavaScript1.2">
+<!--
+
+/*
+Contractible Headers Script- 
+© Dynamic Drive (www.dynamicdrive.com)
+For full source code, installation instructions,
+100's more DHTML scripts, and Terms Of
+Use, visit dynamicdrive.com
+*/
+
+var head="display:''"
+function doit(header){
+var head=header.style
+if (head.display=="none")
+head.display=""
+else
+head.display="none"
+}
+//-->
+</script>
+</head>
+
+<body>
+
+<hr>
+
+<table align="right" cellpadding=0 cellspacing=0 bgcolor="white">
+<tr>
+<td><img src="poker-bar-left.png"></td>
+<td style="background: url('poker-bar-middle.png')">
+<img src="cardgame/spadesblack.bmp" alt="Spade">
+&nbsp;<a href="poker-about.html">[About]</a>&nbsp;
+<img src="cardgame/diamondsred.bmp" alt="Diamond">
+&nbsp;<a href="poker-intro.html">[Introduction]</a>&nbsp;
+<img src="cardgame/heartsred.bmp" alt="Heart">
+&nbsp;<a href="poker-table.html">[Table]</a>&nbsp;
+<img src="cardgame/clubsblack.bmp" alt="Club">
+&nbsp;<a href="poker-variants.html">[Variants]</a>&nbsp;
+</td>
+<td><img src="poker-bar-right.png"></td>
+</tr>
+</table>
+
+<a href="poker.html"><img src="poker-logo.png" alt="[PokerWeb]"></a>
+
+<hr>
+
+<h1>Table</h1>
+
+<p>Click the headings to display the text folded into them.</p>
+
+<table width="100%" border=1>
+ <tr>
+  <th>Hand Name</th>
+  <th>Example</th>
+  <th width="50%">Probability</th>
+ </tr>
+ <tr>
+  <td>Royal Flush</td>
+  <td>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/acered.bmp" alt="Ace">
+   <img src="cardgame/diamondsred.bmp" alt="Diamond">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/kingred.bmp" alt="King">
+   <img src="cardgame/diamondsred.bmp" alt="Diamond">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/queenred.bmp" alt="Queen">
+   <img src="cardgame/diamondsred.bmp" alt="Diamond">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/jackred.bmp" alt="Jack">
+   <img src="cardgame/diamondsred.bmp" alt="Diamonds">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/tenred.bmp" alt="10">
+   <img src="cardgame/diamondsred.bmp" alt="Diamonds">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+  </td>
+ <td>
+  <h2 style="cursor:hand" onClick="doit(document.all[this.sourceIndex+1])">Work</h2>
+  <span style="display:none" style=&{head};>
+  <tt>
+  4<br>
+  ------<br>
+  52 C 5<br>
+  </tt>
+  </span>
+  <h2 style="cursor:hand" onClick="doit(document.all[this.sourceIndex+1])">Answer</h2>
+  <span style="display:none" style=&{head};>
+  <tt>4 / 2598960</tt> or <tt>1.539077169E<sup>-6</sup></tt> or around <tt>.0002%</tt>
+  </span> 
+ </td>
+ </tr>
+ <tr>
+  <td>Straight Flush</td>
+  <td>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/tenblack.bmp" alt="10">
+   <img src="cardgame/spadesblack.bmp" alt="Spades">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/nineblack.bmp" alt="9">
+   <img src="cardgame/spadesblack.bmp" alt="Spades">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/eightblack.bmp" alt="8">
+   <img src="cardgame/spadesblack.bmp" alt="Spades">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/sevenblack.bmp" alt="7">
+   <img src="cardgame/spadesblack.bmp" alt="Spades">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/sixblack.bmp" alt="6">
+   <img src="cardgame/spadesblack.bmp" alt="Spades">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+  </td>
+ <td>
+  <h2 style="cursor:hand" onClick="doit(document.all[this.sourceIndex+1])">Work</h2>
+  <span style="display:none" style=&{head};>
+  <tt>
+  9 * 4<br>
+  ------<br>
+  52 C 5<br>
+  </tt>
+  </span>
+  <h2 style="cursor:hand" onClick="doit(document.all[this.sourceIndex+1])">Answer</h2>
+  <span style="display:none" style=&{head};>
+  <tt>36 / 2598960</tt> or <tt>1.385169452E<sup>-5</sup></tt> or around <tt>.001%</tt>
+  </span> 
+ </td>
+ </tr>
+ <tr>
+  <td>Four of a Kind</td>
+  <td>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/jackred.bmp" alt="Jack">
+   <img src="cardgame/diamondsred.bmp" alt="Diamonds">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/jackred.bmp" alt="Jack">
+   <img src="cardgame/heartsred.bmp" alt="Hearts">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/jackblack.bmp" alt="Jack">
+   <img src="cardgame/clubsblack.bmp" alt="Clubs">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/jackblack.bmp" alt="Jack">
+   <img src="cardgame/clubsblack.bmp" alt="Clubs">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+  </td>
+ <td>
+  <h2 style="cursor:hand" onClick="doit(document.all[this.sourceIndex+1])">Work</h2>
+  <span style="display:none" style=&{head};>
+  <tt>
+  13 * 4 C 4 * 13<br>
+  ---------------<br>
+  52 C 5<br>
+  </tt>
+  </span>
+  <h2 style="cursor:hand" onClick="doit(document.all[this.sourceIndex+1])">Answer</h2>
+  <span style="display:none" style=&{head};>
+  <tt>169 / 2598960</tt> or <tt>6.50260104E<sup>-5</sup></tt> or around <tt>.007%</tt>
+  </span> 
+ </td>
+ </tr>
+ <tr>
+  <td>Full House</td>
+  <td>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/acered.bmp" alt="Ace">
+   <img src="cardgame/diamondsred.bmp" alt="Diamonds">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/acered.bmp" alt="Ace">
+   <img src="cardgame/heartsred.bmp" alt="Hearts">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/tenred.bmp" alt="10">
+   <img src="cardgame/diamondsred.bmp" alt="Diamonds">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/tenblack.bmp" alt="10">
+   <img src="cardgame/spadesblack.bmp" alt="Spades">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/tenblack.bmp" alt="10">
+   <img src="cardgame/clubsblack.bmp" alt="Clubs">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+  </td>
+ <td>
+  <h2 style="cursor:hand" onClick="doit(document.all[this.sourceIndex+1])">Work</h2>
+  <span style="display:none" style=&{head};>
+  <tt>
+  13 * 4 C 3 * 12 * 4 C 2<br>
+  -----------------------<br>
+  52 C 5<br>
+  <br>
+  13 * 4 * 12 * 6<br>
+  ---------------<br>
+  52 C 5
+  </tt>
+  </span>
+  <h2 style="cursor:hand" onClick="doit(document.all[this.sourceIndex+1])">Answer</h2>
+  <span style="display:none" style=&{head};>
+  <tt>3744 / 2598960</tt> or <tt>.0014405762</tt> or around <tt>.1%</tt>
+  </span> 
+ </td>
+ </tr>
+ <tr>
+  <td>Flush</td>
+  <td>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/acered.bmp" alt="Ace">
+   <img src="cardgame/diamondsred.bmp" alt="Diamonds">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/tenred.bmp" alt="10">
+   <img src="cardgame/diamondsred.bmp" alt="Diamonds">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/ninered.bmp" alt="9">
+   <img src="cardgame/diamondsred.bmp" alt="Diamonds">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/sixred.bmp" alt="6">
+   <img src="cardgame/diamondsred.bmp" alt="Diamonds">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/twored.bmp" alt="2">
+   <img src="cardgame/diamondsred.bmp" alt="Diamonds">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+  </td>
+ <td>
+  <h2 style="cursor:hand" onClick="doit(document.all[this.sourceIndex+1])">Work</h2>
+  <span style="display:none" style=&{head};>
+  <tt>
+  13 C 5<br>
+  ------<br>
+  52 C 5<br>
+  </tt>
+  </span>
+  <h2 style="cursor:hand" onClick="doit(document.all[this.sourceIndex+1])">Answer</h2>
+  <span style="display:none" style=&{head};>
+  <tt>1287 / 2598960</tt> or <tt>4.91980792E<sup>-4</sup></tt> or around <tt>.04%</tt>
+  </span> 
+ </td>
+ </tr>
+ <tr>
+  <td>Straight</td>
+  <td>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/jackblack.bmp" alt="Jack">
+   <img src="cardgame/spadesblack.bmp" alt="Spades">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/tenred.bmp" alt="10">
+   <img src="cardgame/diamondsred.bmp" alt="Diamonds">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/nineblack.bmp" alt="9">
+   <img src="cardgame/clubsblack.bmp" alt="Clubs">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/eightred.bmp" alt="8">
+   <img src="cardgame/heartsred.bmp" alt="Hearts">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/sevenred.bmp" alt="7">
+   <img src="cardgame/heartsred.bmp" alt="Hearts">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+  </td>
+ <td>
+  <h2 style="cursor:hand" onClick="doit(document.all[this.sourceIndex+1])">Work</h2>
+  <span style="display:none" style=&{head};>
+  <tt>
+  9 * 4<sup>5</sup><br>
+  ------<br>
+  52 C 5<br>
+  </tt>
+  </span>
+  <h2 style="cursor:hand" onClick="doit(document.all[this.sourceIndex+1])">Answer</h2>
+  <span style="display:none" style=&{head};>
+  <tt>9216 / 2598960</tt> or <tt>.0035460338</tt> or around <tt>.3%</tt>
+  </span> 
+ </td>
+ </tr>
+ <tr>
+  <td>Three of a Kind</td>
+  <td>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/acered.bmp" alt="Ace">
+   <img src="cardgame/diamondsred.bmp" alt="Diamonds">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/acered.bmp" alt="Ace">
+   <img src="cardgame/heartsred.bmp" alt="Hearts">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/aceblack.bmp" alt="Ace">
+   <img src="cardgame/clubsblack.bmp" alt="Clubs">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+  </td>
+ <td>
+  <h2 style="cursor:hand" onClick="doit(document.all[this.sourceIndex+1])">Work</h2>
+  <span style="display:none" style=&{head};>
+  <tt>
+  13 * (4 C 3) * (12 C 2) * 4<sup>2</sup><br>
+  ----------------------------<br>
+  52 C 5<br>
+  <br>
+  13 * 3 * 66 * 16<br>
+  ----------------<br>
+  2598960<br>
+  </tt>
+  </span>
+  <h2 style="cursor:hand" onClick="doit(document.all[this.sourceIndex+1])">Answer</h2>
+  <span style="display:none" style=&{head};>
+  <tt>41184 / 2598960</tt> or <tt>.0158463385</tt> or around <tt>1.6%</tt>
+  </span> 
+ </td>
+ </tr>
+ <tr>
+  <td>Two Pairs</td>
+  <td>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/sevenred.bmp" alt="7">
+   <img src="cardgame/diamondsred.bmp" alt="Diamond">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/sevenred.bmp" alt="7">
+   <img src="cardgame/heartsred.bmp" alt="Heart">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/fiveblack.bmp" alt="5">
+   <img src="cardgame/spadesblack.bmp" alt="Spade">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/fivered.bmp" alt="5">
+   <img src="cardgame/diamondsred.bmp" alt="Diamond">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+  </td>
+ <td>
+  <h2 style="cursor:hand" onClick="doit(document.all[this.sourceIndex+1])">Work</h2>
+  <span style="display:none" style=&{head};>
+  <tt>
+  13 * (4 C 2) * 13 * (4 C 2) * 52<br>
+  --------------------------------<br>
+  52 C 5<br>
+  <br>
+  13 * 6 * 13 * 6 * 52<br>
+  --------------------<br>
+  2598960<br>
+  </tt>
+  </span>
+  <h2 style="cursor:hand" onClick="doit(document.all[this.sourceIndex+1])">Answer</h2>
+  <span style="display:none" style=&{head};>
+  <tt>292032 / 2598960</tt> or <tt>.112364946</tt> or around <tt>11.2%</tt>
+  </span> 
+ </td>
+ </tr>
+ <tr>
+  <td>Pair</td>
+  <td>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/nineblack.bmp" alt="9">
+   <img src="cardgame/clubsblack.bmp" alt="Club">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+   <table cellpadding=0 cellspacing=0 bgcolor="white">
+   <tr>
+   <td><img src="poker-bar-left.png"></td>
+   <td style="background: url('poker-bar-middle.png')">
+   <img src="cardgame/ninered.bmp" alt="9">
+   <img src="cardgame/diamondsred.bmp" alt="Diamond">
+   </td>
+   <td><img src="poker-bar-right.png"></td>
+   </tr>
+   </table>
+ </td>
+ <td>
+  <h2 style="cursor:hand" onClick="doit(document.all[this.sourceIndex+1])">Work</h2>
+  <span style="display:none" style=&{head};>
+  <tt>
+  13 * (4 C 2) * (12 C 3) * 4<sup>3</sup><br>
+  ----------------------------<br>
+  52 C 5<br>
+  <br>
+  13 * 6 * 220 * 64<br>
+  -----------------<br>
+  2598960<br>
+  </tt>
+  </span>
+  <h2 style="cursor:hand" onClick="doit(document.all[this.sourceIndex+1])">Answer</h2>
+  <span style="display:none" style=&{head};>
+  <tt>1098240 / 2598960</tt> or <tt>.4225690276</tt> or around <tt>42.3%</tt>
+  </span> 
+ </td>
+ </tr>
+</table>
+
+<hr>
+
+<center>
+<small>&copy; Copyright 2001 <a href="mailto.php?user=worldmaker">Max Battcher/WorldMaker</a></small>
+</center>
+
+<hr>
+
+</body>
+</html>
