@@ -1,2 +1,2 @@
 # p-space01
-Archive of "Probability Space" project circa 2001
+Archive of "Project Space" website circa 2001
